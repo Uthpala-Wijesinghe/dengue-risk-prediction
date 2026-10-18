@@ -1,5 +1,7 @@
 # Sri Lanka Dengue Risk Prediction with Ensemble Methods
 
+**Live dashboard:** https://dengue-risk-sl.streamlit.app
+
 Random Forest and XGBoost, compared against each other, a naive baseline, and two ensembles built from them (soft voting and stacking), for predicting dengue risk in Sri Lanka's 25 districts. Includes single-sample inference from a saved pickle model and a Streamlit front end.
 
 ## Problem
