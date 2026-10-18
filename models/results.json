@@ -1,0 +1,338 @@
+{
+ "zone_cv": [
+  {
+   "Model": "Stacking (RF + XGB -> LogReg)",
+   "CV train macro F1": 0.756,
+   "CV accuracy": 0.7117,
+   "CV macro F1": 0.5676,
+   "CV macro F1 (std)": 0.0946
+  },
+  {
+   "Model": "Random Forest",
+   "CV train macro F1": 0.8676,
+   "CV accuracy": 0.6942,
+   "CV macro F1": 0.5426,
+   "CV macro F1 (std)": 0.0978
+  },
+  {
+   "Model": "Bagging (500 trees, all features)",
+   "CV train macro F1": 0.8766,
+   "CV accuracy": 0.6808,
+   "CV macro F1": 0.5377,
+   "CV macro F1 (std)": 0.061
+  },
+  {
+   "Model": "Logistic Regression",
+   "CV train macro F1": 0.7114,
+   "CV accuracy": 0.7133,
+   "CV macro F1": 0.5296,
+   "CV macro F1 (std)": 0.0664
+  },
+  {
+   "Model": "Soft Voting (RF + XGB)",
+   "CV train macro F1": 0.8377,
+   "CV accuracy": 0.6983,
+   "CV macro F1": 0.5295,
+   "CV macro F1 (std)": 0.0848
+  },
+  {
+   "Model": "XGBoost",
+   "CV train macro F1": 0.8137,
+   "CV accuracy": 0.6933,
+   "CV macro F1": 0.5259,
+   "CV macro F1 (std)": 0.0818
+  },
+  {
+   "Model": "Decision Tree",
+   "CV train macro F1": 0.6799,
+   "CV accuracy": 0.6608,
+   "CV macro F1": 0.4968,
+   "CV macro F1 (std)": 0.0714
+  }
+ ],
+ "zone_test": [
+  {
+   "Model": "Naive baseline (district's usual zone)",
+   "Train accuracy": NaN,
+   "Test accuracy": 0.5097,
+   "Balanced accuracy": 0.3495,
+   "Test macro F1": 0.3204,
+   "Epidemic recall": 0.0,
+   "Epidemic F1": 0.0,
+   "Train-test gap": NaN
+  },
+  {
+   "Model": "Decision Tree",
+   "Train accuracy": 0.7022,
+   "Test accuracy": 0.6119,
+   "Balanced accuracy": 0.4709,
+   "Test macro F1": 0.4613,
+   "Epidemic recall": 0.1667,
+   "Epidemic F1": 0.1277,
+   "Train-test gap": 0.0903
+  },
+  {
+   "Model": "Logistic Regression",
+   "Train accuracy": 0.7196,
+   "Test accuracy": 0.7086,
+   "Balanced accuracy": 0.6426,
+   "Test macro F1": 0.6209,
+   "Epidemic recall": 0.5,
+   "Epidemic F1": 0.4286,
+   "Train-test gap": 0.0111
+  },
+  {
+   "Model": "Bagging (500 trees, all features)",
+   "Train accuracy": 0.8637,
+   "Test accuracy": 0.6934,
+   "Balanced accuracy": 0.5616,
+   "Test macro F1": 0.5713,
+   "Epidemic recall": 0.2778,
+   "Epidemic F1": 0.3125,
+   "Train-test gap": 0.1703
+  },
+  {
+   "Model": "Random Forest",
+   "Train accuracy": 0.8567,
+   "Test accuracy": 0.6961,
+   "Balanced accuracy": 0.5459,
+   "Test macro F1": 0.5532,
+   "Epidemic recall": 0.2222,
+   "Epidemic F1": 0.25,
+   "Train-test gap": 0.1605
+  },
+  {
+   "Model": "XGBoost",
+   "Train accuracy": 0.7956,
+   "Test accuracy": 0.7017,
+   "Balanced accuracy": 0.5674,
+   "Test macro F1": 0.5806,
+   "Epidemic recall": 0.2778,
+   "Epidemic F1": 0.3226,
+   "Train-test gap": 0.0939
+  },
+  {
+   "Model": "Soft Voting (RF + XGB)",
+   "Train accuracy": 0.8263,
+   "Test accuracy": 0.6934,
+   "Balanced accuracy": 0.5441,
+   "Test macro F1": 0.5594,
+   "Epidemic recall": 0.2222,
+   "Epidemic F1": 0.2759,
+   "Train-test gap": 0.1329
+  },
+  {
+   "Model": "Stacking (RF + XGB -> LogReg)",
+   "Train accuracy": 0.7548,
+   "Test accuracy": 0.6713,
+   "Balanced accuracy": 0.5116,
+   "Test macro F1": 0.5076,
+   "Epidemic recall": 0.1667,
+   "Epidemic F1": 0.15,
+   "Train-test gap": 0.0835
+  }
+ ],
+ "epidemic_test": [
+  {
+   "Model": "Logistic Regression",
+   "ROC-AUC": 0.8492,
+   "PR-AUC": 0.4448,
+   "Sensitivity (recall)": 0.7222,
+   "Specificity": 0.8499,
+   "Precision": 0.1092,
+   "F1": 0.1898,
+   "Balanced accuracy": 0.786,
+   "Alarms raised": 119
+  },
+  {
+   "Model": "Random Forest",
+   "ROC-AUC": 0.8107,
+   "PR-AUC": 0.2698,
+   "Sensitivity (recall)": 0.5,
+   "Specificity": 0.9646,
+   "Precision": 0.2647,
+   "F1": 0.3462,
+   "Balanced accuracy": 0.7323,
+   "Alarms raised": 34
+  },
+  {
+   "Model": "XGBoost",
+   "ROC-AUC": 0.8372,
+   "PR-AUC": 0.3019,
+   "Sensitivity (recall)": 0.7222,
+   "Specificity": 0.8952,
+   "Precision": 0.1494,
+   "F1": 0.2476,
+   "Balanced accuracy": 0.8087,
+   "Alarms raised": 87
+  },
+  {
+   "Model": "Soft Voting (RF + XGB)",
+   "ROC-AUC": 0.8267,
+   "PR-AUC": 0.2703,
+   "Sensitivity (recall)": 0.7222,
+   "Specificity": 0.9448,
+   "Precision": 0.25,
+   "F1": 0.3714,
+   "Balanced accuracy": 0.8335,
+   "Alarms raised": 52
+  }
+ ],
+ "cases_test": [
+  {
+   "Model": "Baseline: last month's cases",
+   "Train R2": NaN,
+   "Test MAE": 60.9489,
+   "Test RMSE": 132.3614,
+   "Test R2": 0.7555
+  },
+  {
+   "Model": "Baseline: district average",
+   "Train R2": NaN,
+   "Test MAE": 86.0247,
+   "Test RMSE": 161.5951,
+   "Test R2": 0.6356
+  },
+  {
+   "Model": "Decision Tree",
+   "Train R2": 0.6701,
+   "Test MAE": 78.5592,
+   "Test RMSE": 168.6531,
+   "Test R2": 0.6031
+  },
+  {
+   "Model": "Random Forest",
+   "Train R2": 0.7511,
+   "Test MAE": 60.0344,
+   "Test RMSE": 116.2786,
+   "Test R2": 0.8113
+  },
+  {
+   "Model": "XGBoost (Poisson)",
+   "Train R2": 0.8902,
+   "Test MAE": 57.9795,
+   "Test RMSE": 113.1643,
+   "Test R2": 0.8213
+  },
+  {
+   "Model": "Voting (average of RF + XGB)",
+   "Train R2": 0.8378,
+   "Test MAE": 57.436,
+   "Test RMSE": 112.3729,
+   "Test R2": 0.8238
+  },
+  {
+   "Model": "Stacking (RF + XGB -> Ridge)",
+   "Train R2": 0.8671,
+   "Test MAE": 76.7333,
+   "Test RMSE": 145.5222,
+   "Test R2": 0.7045
+  }
+ ],
+ "paper_comparison": [
+  {
+   "Model": "Paper: Logistic Regression (defaults)",
+   "Random split accuracy": 0.6861,
+   "Random split macro F1": 0.6486,
+   "Time split accuracy": 0.6506,
+   "Time split macro F1": 0.5472,
+   "Time split Epidemic recall": 0.7222
+  },
+  {
+   "Model": "Paper: Random Forest (200 trees, depth 5)",
+   "Random split accuracy": 0.6847,
+   "Random split macro F1": 0.6484,
+   "Time split accuracy": 0.5884,
+   "Time split macro F1": 0.477,
+   "Time split Epidemic recall": 0.6111
+  },
+  {
+   "Model": "Paper: XGBoost (depth 5, lr 0.1, 200 trees)",
+   "Random split accuracy": 0.7387,
+   "Random split macro F1": 0.721,
+   "Time split accuracy": 0.6588,
+   "Time split macro F1": 0.5446,
+   "Time split Epidemic recall": 0.5
+  },
+  {
+   "Model": "This notebook: Random Forest",
+   "Random split accuracy": NaN,
+   "Random split macro F1": NaN,
+   "Time split accuracy": 0.6961,
+   "Time split macro F1": 0.5532,
+   "Time split Epidemic recall": 0.2222
+  },
+  {
+   "Model": "This notebook: XGBoost",
+   "Random split accuracy": NaN,
+   "Random split macro F1": NaN,
+   "Time split accuracy": 0.7017,
+   "Time split macro F1": 0.5806,
+   "Time split Epidemic recall": 0.2778
+  },
+  {
+   "Model": "This notebook: Soft Voting (RF + XGB)",
+   "Random split accuracy": NaN,
+   "Random split macro F1": NaN,
+   "Time split accuracy": 0.6934,
+   "Time split macro F1": 0.5594,
+   "Time split Epidemic recall": 0.2222
+  }
+ ],
+ "rf_importance": {
+  "prev_month_incidence": 0.2069,
+  "neighboring_district_cases_lag1": 0.1408,
+  "population_density": 0.1005,
+  "rolling_3month_avg": 0.0891,
+  "mom_change_pct": 0.0608,
+  "youth_pct": 0.0493,
+  "prev_year_same_month_incidence": 0.0447,
+  "temperature_mean_3_months_prior": 0.0443,
+  "rainfall_3_months_prior": 0.0417,
+  "humidity_mean_1_month_prior": 0.0414,
+  "humidity_mean_2_months_prior": 0.0404,
+  "season (all one-hot columns)": 0.0386,
+  "wind_speed_mean": 0.0325,
+  "district (all one-hot columns)": 0.0269,
+  "urban_pct": 0.0258,
+  "elevation": 0.016
+ },
+ "permutation_importance": {
+  "Random Forest": {
+   "district": 0.0184,
+   "season": -0.0007,
+   "rainfall_3_months_prior": -0.0231,
+   "temperature_mean_3_months_prior": -0.0014,
+   "humidity_mean_1_month_prior": 0.01,
+   "humidity_mean_2_months_prior": -0.005,
+   "wind_speed_mean": -0.0071,
+   "elevation": 0.0158,
+   "prev_month_incidence": 0.1466,
+   "prev_year_same_month_incidence": 0.0275,
+   "rolling_3month_avg": 0.0142,
+   "mom_change_pct": 0.0161,
+   "neighboring_district_cases_lag1": 0.0476,
+   "population_density": 0.0888,
+   "urban_pct": 0.0232,
+   "youth_pct": 0.0201
+  },
+  "XGBoost": {
+   "district": 0.0079,
+   "season": 0.0267,
+   "rainfall_3_months_prior": -0.0039,
+   "temperature_mean_3_months_prior": 0.012,
+   "humidity_mean_1_month_prior": 0.0242,
+   "humidity_mean_2_months_prior": 0.0067,
+   "wind_speed_mean": -0.0012,
+   "elevation": 0.0121,
+   "prev_month_incidence": 0.179,
+   "prev_year_same_month_incidence": 0.0215,
+   "rolling_3month_avg": 0.0313,
+   "mom_change_pct": 0.0391,
+   "neighboring_district_cases_lag1": 0.0628,
+   "population_density": 0.1058,
+   "urban_pct": 0.0162,
+   "youth_pct": 0.0189
+  }
+ }
+}
